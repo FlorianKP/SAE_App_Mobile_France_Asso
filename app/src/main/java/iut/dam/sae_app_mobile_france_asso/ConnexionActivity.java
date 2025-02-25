@@ -27,32 +27,35 @@ public class ConnexionActivity extends AppCompatActivity {
         });
     }
     public void clickLogin(View view){
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        if(bundle != null) {
-            String trueEmail = bundle.getString("email");
-            String truePassword = bundle.getString("password");
-            if (validId(trueEmail, truePassword)) {
+        if (validEmail()) {
+            if(validPassword()){
+                Toast.makeText(this, "Connexion réussie", Toast.LENGTH_SHORT).show();
                 Intent intentMain = new Intent(ConnexionActivity.this, MainActivity.class);
-                Bundle bundleMain = new Bundle();
-                bundleMain.putString("firstname", bundle.getString("firstname"));
-                bundleMain.putString("email", trueEmail);
-                bundleMain.putString("password", truePassword);
-                intentMain.putExtras(bundleMain);
                 startActivity(intentMain);
-            } else {
-                Toast.makeText(this, "Identifiants invalides", Toast.LENGTH_SHORT).show();
             }
+            else{
+                Toast.makeText(this, "Mot de passe incorrecte", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(this, "Email invalide", Toast.LENGTH_SHORT).show();
         }
-        else Toast.makeText(this, "Identifiants invalides", Toast.LENGTH_SHORT).show();
     }
 
-    private boolean validId(String trueEmail, String truePassword){
+    private boolean validEmail() {
+        EditText etMail = findViewById(R.id.etEmail);
+        String email = etMail.getText().toString().trim();
+        DatabaseOpenHelper db = new DatabaseOpenHelper(this);
+        return db.isEmailExisting(email);
+    }
+
+    private boolean validPassword(){
         EditText etMail = findViewById(R.id.etEmail);
         EditText etPassword = findViewById(R.id.etPassword);
         String email = etMail.getText().toString().trim();
         String password = etPassword.getText().toString().trim();
-        return (email.equals(trueEmail) && password.equals(truePassword));
+        DatabaseOpenHelper db = new DatabaseOpenHelper(this);
+        String rightPassword = db.getPassword(email);
+        return (password.equals(rightPassword));
     }
 
     public void clickRegister(View view) {

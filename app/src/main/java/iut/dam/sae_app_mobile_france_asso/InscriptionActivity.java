@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class InscriptionActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,13 +40,9 @@ public class InscriptionActivity extends AppCompatActivity {
             if(isValid(firstname)){
                 if(isValidEmail(email)){
                     if(passwordValid(password)){
+                        DatabaseOpenHelper db = new DatabaseOpenHelper(this);
+                        db.addPerson(name, firstname, email, password,0);
                         Intent intent = new Intent(this, ConnexionActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putString("name", name);
-                        bundle.putString("firstname", firstname);
-                        bundle.putString("email", email);
-                        bundle.putString("password", password);
-                        intent.putExtras(bundle);
                         startActivity(intent);
                         Toast t = Toast.makeText(this, "Inscription réussie", Toast.LENGTH_SHORT);
                         t.show();
@@ -71,8 +68,9 @@ public class InscriptionActivity extends AppCompatActivity {
         }
     }
     public boolean isValidEmail(String email) {
+        DatabaseOpenHelper db = new DatabaseOpenHelper(this);
         String emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
-        return email.matches(emailPattern);
+        return email.matches(emailPattern) && !db.isEmailExisting(email);
     }
 
     private boolean passwordValid(String password) {
