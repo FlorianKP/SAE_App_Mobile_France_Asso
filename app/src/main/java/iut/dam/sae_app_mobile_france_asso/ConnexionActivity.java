@@ -1,7 +1,6 @@
 package iut.dam.sae_app_mobile_france_asso;
 
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -30,7 +29,7 @@ public class ConnexionActivity extends AppCompatActivity {
         if (validEmail()) {
             if(validPassword()){
                 Toast.makeText(this, "Connexion réussie", Toast.LENGTH_SHORT).show();
-                Intent intentMain = new Intent(ConnexionActivity.this, MainActivity.class);
+                Intent intentMain = new Intent(ConnexionActivity.this, Association.class);
                 startActivity(intentMain);
             }
             else{
