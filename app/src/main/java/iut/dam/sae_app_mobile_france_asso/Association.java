@@ -9,10 +9,10 @@ public class Association extends AppCompatActivity {
     private String categorie;
     private String logoUrl;
 
-    public Association(int id, String name, String description, String logoUrl) {
+    public Association(int id, String name, String categorie, String logoUrl) {
         this.id = id;
         this.name = name;
-        this.categorie = description;
+        this.categorie = categorie;
         this.logoUrl = logoUrl;
     }
 

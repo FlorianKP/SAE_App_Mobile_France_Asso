@@ -4,8 +4,8 @@
     android:orientation="vertical"
     android:padding="8dp"
     android:layout_margin="5dp"
-    android:gravity="center"
-    android:background="@drawable/item_asso_background">
+    android:fitsSystemWindows="true"
+    android:gravity="center">
 
     <ImageView
         android:id="@+id/association_logo"
@@ -13,8 +13,8 @@
         android:layout_height="120dp"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:src="@drawable/ic_launcher_background" />
-
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/item_asso_background"/>
     <TextView
         android:id="@+id/association_name"
         android:layout_width="wrap_content"
