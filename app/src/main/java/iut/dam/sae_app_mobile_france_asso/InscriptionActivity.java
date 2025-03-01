@@ -181,7 +181,6 @@ public class InscriptionActivity extends AppCompatActivity {
         }
     }
     public boolean isValidEmail(String email) {
-        DatabaseOpenHelper db = new DatabaseOpenHelper(this);
         String emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
         return email.matches(emailPattern);
     }

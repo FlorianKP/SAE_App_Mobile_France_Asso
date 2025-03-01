@@ -114,16 +114,6 @@ public class ConnexionActivity extends AppCompatActivity {
         }
     }
 
-    private boolean validEmail(String email) {
-        DatabaseOpenHelper db = new DatabaseOpenHelper(this);
-        return db.isEmailExisting(email);
-    }
-
-    private boolean validPassword(String email, String password){
-        DatabaseOpenHelper db = new DatabaseOpenHelper(this);
-        String rightPassword = db.getPassword(email);
-        return (password.equals(rightPassword));
-    }
 
     public void clickRegister(View view) {
         Intent intent = new Intent(this, InscriptionActivity.class);
