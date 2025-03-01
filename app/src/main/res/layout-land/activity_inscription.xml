@@ -9,13 +9,15 @@
     tools:context=".InscriptionActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:background="@drawable/blue_gradient">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:onClick="clickBack"
             android:src="@drawable/baseline_arrow_back_ios_new_24"
             android:background="@null"/>
         <TextView
@@ -23,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Retour"
+            android:onClick="clickBack"
             android:textColor="@color/white"/>
     </LinearLayout>
     <LinearLayout

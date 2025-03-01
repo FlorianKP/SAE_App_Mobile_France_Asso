@@ -1,6 +1,9 @@
 package iut.dam.sae_app_mobile_france_asso;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -19,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.fragment_container, new AssociationListFragment());
         transaction.commit();
 
+    }
+
+    public void clickAccount(View view) {
+        Intent intent = new Intent(this, ConnexionActivity.class);
+        startActivity(intent);
     }
 }

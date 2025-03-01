@@ -198,4 +198,9 @@ public class InscriptionActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ConnexionActivity.class);
         startActivity(intent);
     }
+
+    public void clickBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

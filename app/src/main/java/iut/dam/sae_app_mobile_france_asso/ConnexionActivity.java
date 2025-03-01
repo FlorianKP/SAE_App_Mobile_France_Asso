@@ -119,4 +119,9 @@ public class ConnexionActivity extends AppCompatActivity {
         Intent intent = new Intent(this, InscriptionActivity.class);
         startActivity(intent);
     }
+
+    public void clickBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
