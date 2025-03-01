@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "359400930271",
+    "project_id": "sae-app-mobile-france-asso",
+    "storage_bucket": "sae-app-mobile-france-asso.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359400930271:android:c775b5cfd857feaba2626a",
+        "android_client_info": {
+          "package_name": "iut.dam.sae_app_mobile_france_asso"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlHLftZ6xSylP5bAnN6iAJWeRwTOygo8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
