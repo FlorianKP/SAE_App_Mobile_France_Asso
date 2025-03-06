@@ -16,6 +16,12 @@
             android:name=".PayementActivity"
             android:exported="false" />
         <activity
+            android:name=".ChoixMontantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoriqueActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChoixDonation"
             android:exported="false" />
         <activity
