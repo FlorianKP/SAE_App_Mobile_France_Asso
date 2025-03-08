@@ -64,4 +64,18 @@ public class AssociationListFragment extends Fragment {
         }
         adapter.notifyDataSetChanged();
     }
+
+    public void filterByCategory(String category) {
+        filteredList.clear();
+        if (category.equals("Toutes")) {
+            filteredList.addAll(associationList);
+        } else {
+            for (Association association : associationList) {
+                if (association.getCategorie().equals(category)) {
+                    filteredList.add(association);
+                }
+            }
+        }
+        adapter.notifyDataSetChanged();
+    }
 }

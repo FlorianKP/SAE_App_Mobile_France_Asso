@@ -1,31 +1,36 @@
 package iut.dam.sae_app_mobile_france_asso;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+public class MainActivity extends AppCompatActivity implements CategoryFragment.CategoryListener {
 
-import iut.dam.sae_app_mobile_france_asso.AssociationListFragment;
+    private AssociationListFragment associationListFragment;
 
-public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, new AssociationListFragment());
-        transaction.commit();
+        CategoryFragment categoryFragment = new CategoryFragment();
+        categoryFragment.setCategoryListener(this);
 
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.category_container, categoryFragment)
+                .commit();
+
+        associationListFragment = new AssociationListFragment();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, associationListFragment)
+                .commit();
     }
 
-    public void clickAccount(View view) {
-        Intent intent = new Intent(this, ConnexionActivity.class);
-        startActivity(intent);
+    @Override
+    public void onCategorySelected(String category) {
+        if (associationListFragment != null) {
+            associationListFragment.filterByCategory(category);
+        }
     }
 }

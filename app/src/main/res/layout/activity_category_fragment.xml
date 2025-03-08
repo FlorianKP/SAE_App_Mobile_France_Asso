@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/categoryContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toutes"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_maladies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maladies chroniques"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_accidents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accidents et effets secondaires"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_handicap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handicap et dépendance"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_sante_mentale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Santé mentale et bien-être"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_droits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Droits des patients"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_aidants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soutien aux aidants"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_prevention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prévention et santé publique"
+            android:background="@drawable/category_button_selector"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+</HorizontalScrollView>
