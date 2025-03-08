@@ -90,6 +90,7 @@ public class InscriptionActivity extends AppCompatActivity {
         user.put("firstname", firstname);
         user.put("email", email);
         user.put("isAdmin", false); // Par défaut, l'utilisateur n'est pas admin
+        user.put("idAsso", null);
 
         // Sauvegarde des données dans Firestore
         db.collection("users").document(userId)

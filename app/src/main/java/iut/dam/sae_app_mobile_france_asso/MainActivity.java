@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity implements CategoryFragment.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        FirestoreAssoActivity firestoreAssoActivity = new FirestoreAssoActivity();
+        firestoreAssoActivity.ajouterAssociations();
         CategoryFragment categoryFragment = new CategoryFragment();
         categoryFragment.setCategoryListener(this);
 
