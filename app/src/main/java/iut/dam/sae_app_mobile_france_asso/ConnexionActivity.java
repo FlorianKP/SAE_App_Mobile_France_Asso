@@ -25,7 +25,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class ConnexionActivity extends AppCompatActivity {
-
     private static final String TAG = "EmailPassword";
 
     private FirebaseAuth mAuth;

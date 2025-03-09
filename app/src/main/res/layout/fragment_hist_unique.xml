@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment"
+    tools:context=".HistUniqueFragment"
     android:orientation="vertical"
-    android:id="@+id/recapitulatif_dons_recurrent">
+    android:id="@+id/historique_dons_unique">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/liste_dons_recurrent"
+        android:id="@+id/liste_dons_unique"
         android:dividerHeight="0dp"
         android:layout_marginTop="10dp">
 
