@@ -46,6 +46,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btn_unique"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -72,6 +73,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btn_recurrent"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -54,7 +54,6 @@ public class AssociationAdapter extends BaseAdapter {
 
         nameTextView.setText(association.getName());
 
-
         Glide.with(context)
                 .load(association.getLogoUrl())
                 .placeholder(R.drawable.assoimage)

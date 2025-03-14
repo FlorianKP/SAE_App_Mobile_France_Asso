@@ -1,6 +1,7 @@
 package iut.dam.sae_app_mobile_france_asso;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +16,9 @@ public class ChoixMontantActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_choix_montant);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        String typeDon = getIntent().getStringExtra("TYPE_DON");
+        TextView typeTitre = findViewById(R.id.titre);
+        typeTitre.setText("Faire un don " + typeDon + " à");
     }
 }

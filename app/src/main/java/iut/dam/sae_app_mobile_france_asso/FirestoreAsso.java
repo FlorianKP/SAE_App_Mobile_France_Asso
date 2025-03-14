@@ -14,12 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FirestoreAssoActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+public class FirestoreAsso {
     public void ajouterCategories(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 

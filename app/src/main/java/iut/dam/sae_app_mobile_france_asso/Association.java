@@ -4,28 +4,31 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Association extends AppCompatActivity {
 
-    private int id;
+    private String id;
     private String name;
-    private String categorie;
+    private String category;
+    private String description;
     private String logoUrl;
 
-    public Association(int id, String name, String categorie, String logoUrl) {
+    public Association() {
+    }
+    public Association(String id, String category, String description, String logoUrl, String name) {
         this.id = id;
-        this.name = name;
-        this.categorie = categorie;
+        this.category = category;
+        this.description = description;
         this.logoUrl = logoUrl;
+        this.name = name;
     }
 
-    public int getId() {
-        return id;
-    }
-    public String getName() {
+    public String getName(){
         return name;
     }
-    public String getCategorie() {
-        return categorie;
-    }
-    public String getLogoUrl() {
+
+    public String getLogoUrl(){
         return logoUrl;
+    }
+
+    public String getCategory(){
+        return category;
     }
 }
