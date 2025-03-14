@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements CategoryFragment.
 
         FirestoreAssoActivity firestoreAssoActivity = new FirestoreAssoActivity();
         firestoreAssoActivity.ajouterAssociations();
+        firestoreAssoActivity.ajouterCategories();
         CategoryFragment categoryFragment = new CategoryFragment();
         categoryFragment.setCategoryListener(this);
 
