@@ -15,6 +15,9 @@
         android:theme="@style/Theme.SAE_App_Mobile_France_Asso"
         tools:targetApi="31">
         <activity
+            android:name=".AssociationDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".FirestoreAsso"
             android:exported="false" />
         <activity
@@ -40,10 +43,11 @@
             android:exported="false" />
         <activity
             android:name=".ConnexionActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
