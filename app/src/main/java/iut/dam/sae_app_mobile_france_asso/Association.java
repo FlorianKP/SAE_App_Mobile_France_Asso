@@ -2,22 +2,26 @@ package iut.dam.sae_app_mobile_france_asso;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Association extends AppCompatActivity {
+import java.io.Serializable;
+
+public class Association extends AppCompatActivity implements Serializable {
 
     private String id;
     private String name;
     private String category;
     private String description;
     private String logoUrl;
+    private String intitule;
 
     public Association() {
     }
-    public Association(String id, String category, String description, String logoUrl, String name) {
+    public Association(String id, String category, String description, String logoUrl, String name, String intitule) {
         this.id = id;
         this.category = category;
         this.description = description;
         this.logoUrl = logoUrl;
         this.name = name;
+        this.intitule = intitule;
     }
 
     public String getName(){
@@ -35,5 +39,9 @@ public class Association extends AppCompatActivity {
 
     public String getId() {
         return id;
+    }
+
+    public String getIntitule(){
+        return intitule;
     }
 }

@@ -86,7 +86,8 @@ public class AssociationListFragment extends Fragment {
                                 String categorie = (String) document.getData().get("categorie");
                                 String logoUrl = (String) document.getData().get("logoUrl");
                                 String description = (String) document.getData().get("description");
-                                Association a = new Association(id, categorie, "", logoUrl, name);
+                                String intitule = (String) document.getData().get("intitule");
+                                Association a = new Association(id, categorie, description, logoUrl, name, intitule);
                                 associations.add(a);
                             }
 

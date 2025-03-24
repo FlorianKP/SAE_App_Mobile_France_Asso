@@ -26,6 +26,7 @@ public class AssociationDetailActivity extends AppCompatActivity {
     private TextView nameTextView;
     private TextView descriptionTextView;
     private Button donateButton;
+    private Association association;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,7 @@ public class AssociationDetailActivity extends AppCompatActivity {
 
         donateButton.setOnClickListener(v -> {
             Intent donatePage = new Intent(AssociationDetailActivity.this, ChoixDonation.class);
+            donatePage.putExtra("association", association);
             startActivity(donatePage);
         });
     }
@@ -64,9 +66,12 @@ public class AssociationDetailActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot document = task.getResult();
                     if (document.exists()) {
+                        String id = document.getString("id");
+                        String category = document.getString("category");
                         String name = document.getString("name");
                         String description = document.getString("description");
                         String logoUrl = document.getString("logoUrl");
+                        String intitule = document.getString("intitule");
 
                         nameTextView.setText(name);
                         descriptionTextView.setText(description);
@@ -77,6 +82,7 @@ public class AssociationDetailActivity extends AppCompatActivity {
                                 .override(300, 136)
                                 .fitCenter()
                                 .into(logoImageView);
+                        association = new Association(id, category, description, logoUrl, name, intitule);
                     } else {
                         Toast.makeText(AssociationDetailActivity.this, "Association introuvable", Toast.LENGTH_SHORT).show();
                         finish();
