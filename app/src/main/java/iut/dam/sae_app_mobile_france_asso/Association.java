@@ -31,4 +31,9 @@ public class Association extends AppCompatActivity {
     public String getCategory(){
         return category;
     }
+
+
+    public String getId() {
+        return id;
+    }
 }

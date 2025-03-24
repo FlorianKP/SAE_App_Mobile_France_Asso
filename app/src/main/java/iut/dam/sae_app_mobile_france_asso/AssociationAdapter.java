@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import iut.dam.sae_app_mobile_france_asso.R;
 import iut.dam.sae_app_mobile_france_asso.Association;
 import java.util.List;
-
+import android.content.Intent;
 
 public class AssociationAdapter extends BaseAdapter {
     private Context context;
@@ -60,6 +60,12 @@ public class AssociationAdapter extends BaseAdapter {
                 .override(300, 136)
                 .fitCenter()
                 .into(logoImageView);
+
+        convertView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, AssociationDetailActivity.class);
+            intent.putExtra("associationId", association.getId());
+            context.startActivity(intent);
+        });
 
 
         return convertView;
