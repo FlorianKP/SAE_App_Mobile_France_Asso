@@ -96,6 +96,7 @@ public class ChoixMontantActivity extends AppCompatActivity {
             Toast.makeText(this, "Montant sélectionné : " + montant + " €", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(ChoixMontantActivity.this, PayementActivity.class);
+            intent.putExtra("montant", montant);
             intent.putExtra("association", association);
             startActivity(intent);
         });

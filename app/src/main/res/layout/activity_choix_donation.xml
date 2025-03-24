@@ -72,16 +72,16 @@
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/rounded_button"
             android:backgroundTint="@color/orange_boutons"
             android:backgroundTintMode="src_in"
+            app:cornerRadius="20dp"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:paddingHorizontal="50dp"
             android:paddingVertical="20dp"
             android:text="Don unique"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <TextView
             android:layout_width="333dp"
@@ -99,12 +99,12 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_button"
             android:backgroundTint="@color/orange"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:paddingHorizontal="50dp"
             android:paddingVertical="20dp"
+            app:cornerRadius="20dp"
             android:text="Don récurrent"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
