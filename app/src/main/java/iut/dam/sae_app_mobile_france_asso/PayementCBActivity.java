@@ -1,11 +1,7 @@
 package iut.dam.sae_app_mobile_france_asso;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.activity.OnBackPressedCallback;
@@ -14,14 +10,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class PayementActivity extends AppCompatActivity {
+public class PayementCBActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_payement);
-
+        setContentView(R.layout.activity_payement_cbactivity);
         ImageButton btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(v -> finish());
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
@@ -30,16 +25,10 @@ public class PayementActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-        ImageView imgCB = findViewById(R.id.carte_bancaire_logo);
-        TextView textCB = findViewById(R.id.carte_bancaire_TextView);
-        imgCB.setOnClickListener(v -> {
-            Intent intent = new Intent(this, PayementCBActivity.class);
-            startActivity(intent);
-        });
-        textCB.setOnClickListener(v -> {
-            Intent intent = new Intent(this, PayementCBActivity.class);
-            startActivity(intent);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
         });
     }
 }

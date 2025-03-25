@@ -36,8 +36,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             >
             <TextView
@@ -49,6 +48,13 @@
                 android:text="Règlement"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choisissez le mode de paiement"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                />
 
         </LinearLayout>
 
@@ -56,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.85"
+            android:layout_marginTop="15dp"
             android:orientation="vertical"
             >
 
@@ -122,49 +129,7 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/optionsCB"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="50dp"
-                >
-                <ImageView
-                    android:id="@+id/optionMasterCard"
-                    android:layout_width="69dp"
-                    android:layout_height="match_parent"
-                    android:layout_toStartOf="@id/optionVISA"
-                    android:layout_marginEnd="15dp"
-                    android:src="@drawable/mastercard_logo"
-                    />
-                <ImageView
-                    android:id="@+id/optionVISA"
-                    android:layout_width="69dp"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:src="@drawable/visa_logo"
-                    />
-                <ImageView
-                    android:id="@+id/optionCB"
-                    android:layout_width="69dp"
-                    android:layout_height="match_parent"
-                    android:layout_toEndOf="@id/optionVISA"
-                    android:layout_marginStart="15dp"
-                    android:src="@drawable/cb_logo"
 
-                    />
-
-            </RelativeLayout>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Je donne"
-                android:textColor="@color/white"
-                android:background="@color/orange"
-                android:layout_marginStart="60dp"
-                android:layout_marginEnd="60dp"
-                android:layout_marginTop="70dp"
-                />
 
             <!--
 
