@@ -36,7 +36,7 @@ public class AssociationDetailActivity extends AppCompatActivity {
         associationId = getIntent().getStringExtra("associationId");
 
         logoImageView = findViewById(R.id.association_logo);
-        nameTextView = findViewById(R.id.association_name);
+        nameTextView = findViewById(R.id.header_association_name);
         descriptionTextView = findViewById(R.id.association_description);
         donateButton = findViewById(R.id.button_donate);
 
@@ -73,7 +73,7 @@ public class AssociationDetailActivity extends AppCompatActivity {
                         String logoUrl = document.getString("logoUrl");
                         String intitule = document.getString("intitule");
 
-                        nameTextView.setText(name);
+                        nameTextView.setText(intitule);
                         descriptionTextView.setText(description);
 
                         Glide.with(AssociationDetailActivity.this)
@@ -94,4 +94,10 @@ public class AssociationDetailActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void clickBack(android.view.View view) {
+        finish();
+    }
+
+
 }
