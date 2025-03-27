@@ -1,12 +1,16 @@
 package iut.dam.sae_app_mobile_france_asso;
 
+import static android.widget.Toast.makeText;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.activity.OnBackPressedCallback;
@@ -16,9 +20,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class ChoixDonation extends AppCompatActivity {
     private Association association;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +37,7 @@ public class ChoixDonation extends AppCompatActivity {
         Button bRecurrent = findViewById(R.id.btn_recurrent);
 
         association = (Association) getIntent().getSerializableExtra("association");
-
+        mAuth = FirebaseAuth.getInstance();
         TextView associationName = findViewById(R.id.association_name);
         ImageView associationLogo = findViewById(R.id.association_logo);
 
@@ -52,6 +59,14 @@ public class ChoixDonation extends AppCompatActivity {
         bRecurrent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseUser user = mAuth.getCurrentUser();
+                if (user == null){
+                    Toast.makeText(ChoixDonation.this, "Connexion requise", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ChoixDonation.this, ConnexionActivity.class);
+                    intent.putExtra("fromChoixDonation", true);
+                    startActivity(intent);
+                    return;
+                }
                 ouvrirChoixMontant("recurrent");
             }
         });

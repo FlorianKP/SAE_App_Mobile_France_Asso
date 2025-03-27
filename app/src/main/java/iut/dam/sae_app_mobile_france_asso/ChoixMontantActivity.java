@@ -3,9 +3,13 @@ package iut.dam.sae_app_mobile_france_asso;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +23,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class ChoixMontantActivity extends AppCompatActivity {
     private Association association;
     private String montant;
+    private String typeDon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +31,13 @@ public class ChoixMontantActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_choix_montant);
 
-        String typeDon = getIntent().getStringExtra("TYPE_DON");
+        typeDon = getIntent().getStringExtra("TYPE_DON");
         TextView typeTitre = findViewById(R.id.titre);
         typeTitre.setText("Faire un don " + typeDon + " à");
+        RadioGroup radioGroup = findViewById(R.id.radioGroup);
+        if(typeDon.equals("recurrent")){
+            radioGroup.setVisibility(View.VISIBLE);
+        }
 
         TextView textView = findViewById(R.id.association_intitule);
         association = (Association) getIntent().getSerializableExtra("association");
@@ -87,7 +96,12 @@ public class ChoixMontantActivity extends AppCompatActivity {
                     return;
                 }
             }
+            int selectedId = radioGroup.getCheckedRadioButtonId(); // Récupérer l'ID sélectionné
 
+            if ( typeDon.equals("recurrent") && selectedId == -1){
+                Toast.makeText(this, "Veuillez choisir la périodicité du don", Toast.LENGTH_SHORT).show();
+                return;
+            }
             if (montant == null || montant.isEmpty()) {
                 Toast.makeText(this, "Veuillez choisir ou saisir un montant", Toast.LENGTH_SHORT).show();
                 return;
@@ -95,9 +109,18 @@ public class ChoixMontantActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Montant sélectionné : " + montant + " €", Toast.LENGTH_SHORT).show();
 
+
             Intent intent = new Intent(ChoixMontantActivity.this, PayementActivity.class);
-            intent.putExtra("montant", montant);
+            int montant_int = Integer.parseInt(montant);
+            RadioButton selectedRadioButton = findViewById(selectedId);
+            String periodicite = null;
+            if(typeDon.equals("recurrent")){
+                periodicite = (selectedRadioButton.getText().toString().equals("Don annuel")?"annuel":"mensuel");
+            }
+            intent.putExtra("montant", montant_int);
             intent.putExtra("association", association);
+            intent.putExtra("TYPE_DON",typeDon);
+            intent.putExtra("periodicite", periodicite);
             startActivity(intent);
         });
     }

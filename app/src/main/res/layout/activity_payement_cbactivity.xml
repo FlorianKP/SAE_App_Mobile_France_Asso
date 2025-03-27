@@ -175,6 +175,7 @@
                 android:background="@color/orange"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="60dp"
+                android:onClick="clickGive"
                 />
 
             <!--

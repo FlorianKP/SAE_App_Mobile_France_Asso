@@ -34,7 +34,6 @@ public class AssociationDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_association_detail);
 
         associationId = getIntent().getStringExtra("associationId");
-
         logoImageView = findViewById(R.id.association_logo);
         nameTextView = findViewById(R.id.header_association_name);
         descriptionTextView = findViewById(R.id.association_description);
@@ -66,12 +65,12 @@ public class AssociationDetailActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot document = task.getResult();
                     if (document.exists()) {
-                        String id = document.getString("id");
-                        String category = document.getString("category");
+                        String category = document.getString("categorie");
                         String name = document.getString("name");
                         String description = document.getString("description");
                         String logoUrl = document.getString("logoUrl");
                         String intitule = document.getString("intitule");
+                        Log.d("INFOS ASSO",  category);
 
                         nameTextView.setText(intitule);
                         descriptionTextView.setText(description);
@@ -82,7 +81,7 @@ public class AssociationDetailActivity extends AppCompatActivity {
                                 .override(300, 136)
                                 .fitCenter()
                                 .into(logoImageView);
-                        association = new Association(id, category, description, logoUrl, name, intitule);
+                        association = new Association(associationId, category, description, logoUrl, name, intitule);
                     } else {
                         Toast.makeText(AssociationDetailActivity.this, "Association introuvable", Toast.LENGTH_SHORT).show();
                         finish();

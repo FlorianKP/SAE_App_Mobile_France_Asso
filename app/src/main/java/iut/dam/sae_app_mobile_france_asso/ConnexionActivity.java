@@ -28,6 +28,7 @@ public class ConnexionActivity extends AppCompatActivity {
     private static final String TAG = "EmailPassword";
 
     private FirebaseAuth mAuth;
+    private boolean fromChoixDonation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class ConnexionActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_connexion);
         mAuth = FirebaseAuth.getInstance();
+        fromChoixDonation = getIntent().getBooleanExtra("fromChoixDonation",false);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -97,8 +99,16 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
         Toast.makeText(this, "Connexion réussie", Toast.LENGTH_SHORT).show();
-        Intent intentMain = new Intent(ConnexionActivity.this, MainActivity.class);
-        startActivity(intentMain);
+        if(fromChoixDonation){
+            Intent intent = new Intent(ConnexionActivity.this, ChoixDonation.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+        }
+        else{
+            Intent intentMain = new Intent(ConnexionActivity.this, MainActivity.class);
+            startActivity(intentMain);
+        }
+
     }
     public void clickLogin(View view) {
         EditText etMail = findViewById(R.id.etEmail);
