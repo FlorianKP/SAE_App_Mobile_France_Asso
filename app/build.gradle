@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'// pour le qrcode
 
     implementation libs.appcompat
     implementation libs.material
