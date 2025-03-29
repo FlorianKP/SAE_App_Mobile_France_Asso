@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements CategoryFragment.
     @Override
     public void onCategorySelected(String category) {
         if (associationListFragment != null) {
-            associationListFragment.filterByCategory(category);
+            associationListFragment.setSelectedCategory(category);
         }
     }
 

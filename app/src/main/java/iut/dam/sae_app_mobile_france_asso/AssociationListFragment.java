@@ -10,16 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import android.widget.GridView;
-import android.widget.ListView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -37,6 +30,9 @@ public class AssociationListFragment extends Fragment {
     private Map<String, String> categories;
     private AssociationAdapter adapter;
 
+    private String selectedCategory = "Toutes";
+    private String searchText = "";
+
     public AssociationListFragment() {}
 
     @Nullable
@@ -53,7 +49,6 @@ public class AssociationListFragment extends Fragment {
         categories = new HashMap<>();
         fetchAllAssociationsASync();
         fetchAllCategoriesASync();
-        filteredAssociations = new ArrayList<>(associations);
 
         adapter = new AssociationAdapter(requireContext(), filteredAssociations);
         gridView.setAdapter(adapter);
@@ -65,7 +60,8 @@ public class AssociationListFragment extends Fragment {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                filterByCategory(newText);
+                searchText = newText.toLowerCase();
+                applyCombinedFilter();
                 return true;
             }
         });
@@ -80,6 +76,7 @@ public class AssociationListFragment extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()){
+                            associations.clear();
                             for (QueryDocumentSnapshot document : task.getResult()){
                                 String id = document.getId();
                                 String name = (String) document.getData().get("name");
@@ -91,9 +88,7 @@ public class AssociationListFragment extends Fragment {
                                 associations.add(a);
                             }
 
-                            filteredAssociations.clear();
-                            filteredAssociations.addAll(associations);
-                            adapter.notifyDataSetChanged();
+                            applyCombinedFilter();
                         }
                         else {
                             Log.d(this.getClass().getName(), "error");
@@ -115,6 +110,7 @@ public class AssociationListFragment extends Fragment {
 
                                 categories.put(name, id);
                             }
+                            applyCombinedFilter();
                         }
                         else {
                             Log.d(this.getClass().getName(), "error");
@@ -123,15 +119,24 @@ public class AssociationListFragment extends Fragment {
                 });
     }
 
-    public void filterByCategory(String category) {
+    public void setSelectedCategory(String category) {
+        selectedCategory = category;
+        applyCombinedFilter();
+    }
+
+    private void applyCombinedFilter() {
+        if (associations == null || categories == null) return;
+
         filteredAssociations.clear();
-        if (category.isEmpty() || category.equals("Toutes")) {
-            filteredAssociations.addAll(associations);
-        } else {
-            for (Association association : associations) {
-                if (categories.containsKey(category) && categories.get(category).equals(association.getCategory())) {
-                    filteredAssociations.add(association);
-                }
+        for (Association association : associations) {
+            boolean matchCategory = selectedCategory.equals("Toutes") ||
+                    (categories.containsKey(selectedCategory)
+                            && categories.get(selectedCategory).equals(association.getCategory()));
+            boolean matchSearch = searchText.isEmpty() ||
+                    association.getName().toLowerCase().contains(searchText);
+
+            if (matchCategory && matchSearch) {
+                filteredAssociations.add(association);
             }
         }
         adapter.notifyDataSetChanged();
