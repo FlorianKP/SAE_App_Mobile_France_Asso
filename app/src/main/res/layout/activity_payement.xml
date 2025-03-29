@@ -130,10 +130,34 @@
             </RelativeLayout>
 
 
+            <LinearLayout
+                android:id="@+id/zone_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="16dp">
 
-            <!--
+                <TextView
+                    android:id="@+id/texte_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Information sur le mode de paiement sélectionné"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="12dp" />
 
-                -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_je_donne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Je donne"
+                    android:background="@color/orange"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+
 
         </LinearLayout>
 

@@ -65,7 +65,7 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_unique"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_recurrent"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
