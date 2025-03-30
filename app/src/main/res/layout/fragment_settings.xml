@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/param_tres_de_l_application"
+            android:text="@string/text_parametres_application"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="24dp"
@@ -31,7 +31,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/texte_agrandi"
+                android:text="@string/text_texte_agrandi"
                 android:textSize="16sp"
                 android:textColor="@color/black" />
 
@@ -59,7 +59,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/langue_de_l_application"
+                android:text="@string/text_langue_application"
                 android:textSize="16sp"
                 android:textColor="@color/black" />
 

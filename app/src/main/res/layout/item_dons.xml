@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donateur" />
+            android:text="@string/text_donateur" />
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/p_riodicit" />
+            android:text="@string/text_periodicite" />
     </LinearLayout>
 
     <LinearLayout
@@ -50,6 +50,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/montant" />
+            android:text="@string/text_montant" />
     </LinearLayout>
 </LinearLayout>
