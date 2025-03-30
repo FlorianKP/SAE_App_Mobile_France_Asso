@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +16,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SAE_App_Mobile_France_Asso"
         tools:targetApi="31">
+        <activity
+            android:name=".LegalFragment"
+            android:exported="false" />
+        <activity
+            android:name=".AboutFragment"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsFragment"
+            android:exported="false" />
         <activity
             android:name=".PayementCBActivity"
             android:exported="true" />
@@ -56,6 +64,7 @@
             android:theme="@style/Theme.SAE_App_Mobile_France_Asso">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -65,12 +74,14 @@
             android:theme="@style/Theme.SAE_App_Mobile_France_Asso">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
-                    android:scheme="monapp"
                     android:host="deeplink"
-                    android:pathPrefix="/page" />
+                    android:pathPrefix="/page"
+                    android:scheme="monapp" />
             </intent-filter>
         </activity>
     </application>

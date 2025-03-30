@@ -2,4 +2,9 @@
     <string name="app_name">SAE_App_Mobile_France_Asso</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="language_options">
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
 </resources>

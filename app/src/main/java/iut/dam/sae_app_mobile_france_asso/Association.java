@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.Serializable;
 
-public class Association extends AppCompatActivity implements Serializable {
+public class Association extends BaseActivity implements Serializable {
 
     private String id;
     private String name;

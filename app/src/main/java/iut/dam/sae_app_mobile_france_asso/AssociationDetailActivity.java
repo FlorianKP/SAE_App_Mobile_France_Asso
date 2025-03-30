@@ -17,7 +17,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class AssociationDetailActivity extends AppCompatActivity {
+public class AssociationDetailActivity extends BaseActivity {
 
     private FirebaseFirestore db;
     private String associationId;
