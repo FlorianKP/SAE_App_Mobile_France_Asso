@@ -19,7 +19,7 @@
     <string name="text_faire_un_don_a">Faire un don à</string>
     <string name="textQUESTION_quel_type_de_don_souhaitez_vous_faire">Quel type de don souhaitez-vous faire?</string>
     <string name="text_don_unique">Don unique</string>
-    <string name="text_ou">OU</string>
+    <string name="textUPPER_ou">OU</string>
     <string name="text_don_recurrent">Don récurrent</string>
     <string name="text_faire_un_don_unique_a">Faire un don unique à</string>
     <string name="text_nom_association" translatable="false">-nom de l\'association-</string>
@@ -56,14 +56,14 @@
     <string name="descr_inscription_avec_google">Inscription avec Google</string>
     <string name="descr_inscription_avec_facebook">Inscription avec Facebook</string>
     <string name="descr_menu">Menu</string>
-    <string name="ic_ne_de_profil_cliquable_pour_se_connecter_ou_se_d_connecter">icône de profil cliquable pour se connecter ou se déconnecter</string>
-    <string name="r_glement">Règlement</string>
-    <string name="choisissez_le_mode_de_paiement">Choisissez le mode de paiement</string>
-    <string name="image_d_une_banque_correspondant_l_option_de_payement_virement">image d\'une banque correspondant à l\'option de payement : virement</string>
-    <string name="virement">VIREMENT</string>
-    <string name="image_d_une_carte_bancaire_correspondant_l_option_de_payement_carte_bancaire">image d\'une carte bancaire correspondant à l\'option de payement carte bancaire</string>
-    <string name="carte_bancaire">CARTE BANCAIRE</string>
-    <string name="paypal">PAYPAL</string>
+    <string name="descr_image_bouton_profil">Image bouton de profil cliquable pour se connecter ou se déconnecter</string>
+    <string name="text_reglement">Règlement</string>
+    <string name="text_choisissez_le_mode_de_paiement">Choisissez le mode de paiement</string>
+    <string name="descr_image_virement">Image d\'une banque correspondant à l\'option de payement : virement</string>
+    <string name="textUPPER_virement">VIREMENT</string>
+    <string name="descr_image_carte_bancaire">Image d\'une carte bancaire correspondant à l\'option de payement : carte bancaire</string>
+    <string name="textUPPER_carte_bancaire">CARTE BANCAIRE</string>
+    <string name="textUPPER_paypal">PAYPAL</string>
     <string name="information_sur_le_mode_de_paiement_s_lectionn">Information sur le mode de paiement sélectionné</string>
     <string name="image_bouton_du_logo_de_paypal_correspondant_l_option_de_payement_paypal">image bouton du logo de paypal correspondant à l\'option de payement paypal</string>
     <string name="r_glement_par_carte_bancaire">Règlement par carte bancaire</string>

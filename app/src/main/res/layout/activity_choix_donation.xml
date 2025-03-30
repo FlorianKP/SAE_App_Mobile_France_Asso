@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="@string/text_ou"
+            android:text="@string/textUPPER_ou"
             android:textSize="25sp"
             android:textStyle="bold" />
 

@@ -45,13 +45,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:layout_gravity="center"
-                android:text="@string/r_glement"
+                android:text="@string/text_reglement"
                 android:textSize="30sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/choisissez_le_mode_de_paiement"
+                android:text="@string/text_choisissez_le_mode_de_paiement"
                 android:layout_gravity="center"
                 android:textSize="25sp"
                 />
@@ -78,7 +78,7 @@
                     android:layout_height="100dp"
                     android:layout_marginEnd="25dp"
                     android:layout_toStartOf="@id/carte_bancaire_logo"
-                    android:contentDescription="@string/image_d_une_banque_correspondant_l_option_de_payement_virement"
+                    android:contentDescription="@string/descr_image_virement"
                     android:src="@drawable/virement_logo" />
 
                 <TextView
@@ -89,7 +89,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="45dp"
                     android:layout_toStartOf="@id/carte_bancaire_TextView"
-                    android:text="@string/virement"
+                    android:text="@string/textUPPER_virement"
                     android:textSize="12sp" />
 
                 <ImageView
@@ -97,7 +97,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
-                    android:contentDescription="@string/image_d_une_carte_bancaire_correspondant_l_option_de_payement_carte_bancaire"
+                    android:contentDescription="@string/descr_image_carte_bancaire"
                     android:src="@drawable/carte_bancaire_image" />
 
                 <TextView
@@ -107,7 +107,7 @@
                     android:layout_below="@id/carte_bancaire_logo"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:text="@string/carte_bancaire"
+                    android:text="@string/textUPPER_carte_bancaire"
                     android:textSize="12sp" />
 
                 <ImageView
@@ -127,7 +127,7 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="10dp"
                     android:layout_toEndOf="@id/carte_bancaire_TextView"
-                    android:text="@string/paypal"
+                    android:text="@string/textUPPER_paypal"
                     android:textSize="12sp" />
 
             </RelativeLayout>
