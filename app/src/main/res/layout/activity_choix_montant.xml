@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:text="@string/association_nationale_de_d_fense_des_malades_invalides_et_handicap_s"
+        android:text="@string/text_nom_association"
         android:textSize="15sp"
         android:layout_marginTop="10dp" />
     <RadioGroup
@@ -61,13 +61,13 @@
             android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/don_mensuel" />
+            android:text="@string/text_don_mensuel" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/don_annuel" />
+            android:text="@string/text_don_annuel" />
     </RadioGroup>
 
     <RelativeLayout
@@ -79,7 +79,7 @@
         <TextView
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:text="@string/_1"
+            android:text="@string/text_1_euro"
             android:textSize="17sp"
             android:gravity="center"
             android:id="@+id/text_montant01"
@@ -89,7 +89,7 @@
         <TextView
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:text="@string/_10"
+            android:text="@string/text_10_euros"
             android:textSize="17sp"
             android:gravity="center"
             android:id="@+id/text_montant02"
@@ -99,7 +99,7 @@
         <TextView
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:text="@string/_50"
+            android:text="@string/text_50_euros"
             android:textSize="17sp"
             android:gravity="center"
             android:id="@+id/text_montant03"
@@ -110,7 +110,7 @@
             android:id="@+id/text_montant04"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:text="@string/_100"
+            android:text="@string/text_100_euros"
             android:textSize="17sp"
             android:gravity="center"
             android:layout_below="@id/text_montant01"
@@ -123,7 +123,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:autofillHints=""
-        android:hint="@string/montant_libre"
+        android:hint="@string/text_montant_libre"
         android:inputType="number"
         android:textSize="20sp"
         android:textColor="@android:color/darker_gray"
@@ -137,7 +137,7 @@
         android:id="@+id/button_donate"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="@string/je_donne"
+        android:text="@string/text_je_donne"
         android:textSize="20sp"
         app:cornerRadius="5dp"
         android:backgroundTint="@color/orange"

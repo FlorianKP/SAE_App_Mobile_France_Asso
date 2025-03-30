@@ -174,7 +174,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/je_donne"
+                android:text="@string/text_je_donne"
                 android:textColor="@color/white"
                 android:background="@color/orange"
                 android:layout_marginStart="60dp"

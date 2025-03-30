@@ -44,34 +44,34 @@
                 android:layout_gravity="center"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:text="@string/connexion"/>
+                android:text="@string/text_connexion"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="@string/entrez_votre_email_et_votre_mot_de_passe_afin_de_vous_connecter"/>
+                android:text="@string/text_entrez_votre_email_et_votre_mot_de_passe_afin_de_vous_connecter"/>
             <EditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:autofillHints=""
-                android:hint="@string/email"
+                android:hint="@string/text_email"
                 android:inputType="textEmailAddress" />
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="password"
-                android:hint="@string/mot_de_passe"
+                android:hint="@string/text_mot_de_passe"
                 android:inputType="textPassword"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/mot_de_passe_oubli"
+                android:text="@string/text_mot_de_passe_oublie"
                 android:textColor="@color/linkBlue"
                 android:textStyle="bold"
                 android:layout_gravity="end"/>
@@ -81,13 +81,13 @@
                 android:layout_marginTop="10dp"
                 android:padding="15dp"
                 android:backgroundTint="@color/orange"
-                android:text="@string/se_connecter"
+                android:text="@string/text_se_connecter"
                 android:onClick="clickLogin"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/ou_connectez_vous_avec"
+                android:text="@string/text_ou_connectez_vous_avec"
                 android:layout_gravity="center"/>
 
         <LinearLayout
@@ -99,13 +99,13 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
-                android:contentDescription="@string/connexion_avec_google"
+                android:contentDescription="@string/descr_connexion_avec_google"
                 android:src="@drawable/google_logo"/>
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
-                android:contentDescription="@string/connexion_avec_facebook"
+                android:contentDescription="@string/descr_connexion_avec_facebook"
                 android:src="@drawable/facebook_logo"/>
         </LinearLayout>
 
@@ -118,14 +118,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/vous_n_avez_pas_de_compte"/>
+                android:text="@string/textQUESTION_vous_n_avez_pas_de_compte"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/linkBlue"
                 android:textStyle="bold"
-                android:text="@string/inscrivez_vous"
+                android:text="@string/text_inscrivez_vous"
                 android:onClick="clickRegister"/>
         </LinearLayout>
 

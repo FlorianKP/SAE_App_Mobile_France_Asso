@@ -28,7 +28,7 @@
             android:layout_marginStart="10dp"
             android:padding="2dp"
             android:src="@drawable/ic_menu"
-            android:contentDescription="@string/menu"
+            android:contentDescription="@string/descr_menu"
             android:background="@null" />
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
