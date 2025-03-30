@@ -54,7 +54,7 @@
                 android:scaleType="fitCenter"
                 android:background="#E5E5E5"
                 android:layout_marginBottom="8dp"
-                android:contentDescription="@string/logo_de_l_association" />
+                android:contentDescription="@string/descr_logo_association" />
 
 
             <TextView
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/pr_sentation"
+                android:text="@string/textUPPER_presentation"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />

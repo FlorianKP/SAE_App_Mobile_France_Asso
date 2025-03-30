@@ -1,11 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">SAE_App_Mobile_France_Assos_Sante</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nom_association">Nom de l\'association</string>
     <string name="descr_btn_retour">bouton retour à la page précédente</string>
-    <string name="logo_de_l_association">Logo de l\'association</string>
-    <string name="pr_sentation">PRÉSENTATION</string>
+    <string name="descr_logo_association">Logo de l\'association</string>
+    <string name="textUPPER_presentation">PRÉSENTATION</string>
     <string name="chargement_de_la_description">Chargement de la description…</string>
     <string name="faire_un_don">Faire un don</string>
     <string name="toutes">Toutes</string>

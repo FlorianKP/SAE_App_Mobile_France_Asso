@@ -11,7 +11,7 @@
         android:id="@+id/association_logo"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:contentDescription="@string/logo_de_l_association"
+        android:contentDescription="@string/descr_logo_association"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_launcher_background"

@@ -55,7 +55,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:contentDescription="@string/logo_de_l_association"
+            android:contentDescription="@string/descr_logo_association"
             android:src="@drawable/france_asso_sante_logo" />
 
         <TextView
