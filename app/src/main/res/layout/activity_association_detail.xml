@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="4dp"
-                android:text="@string/chargement_de_la_description"
+                android:text="@string/text_chargement_description"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:justificationMode="inter_word"/>
@@ -83,7 +83,7 @@
         android:id="@+id/button_donate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/faire_un_don"
+        android:text="@string/text_faire_un_don"
         android:textColor="@color/white"
         android:backgroundTint="@color/orange"
         android:layout_marginStart="24dp"
