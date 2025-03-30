@@ -30,7 +30,7 @@
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/email_entry"
+        android:text="@string/textDP_email"
         android:textSize="18sp"
         android:padding="8dp"/>
 
@@ -38,7 +38,7 @@
         android:id="@+id/tvUserId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/user_id"
+        android:text="@string/textDP_user_id"
         android:textSize="18sp"
         android:padding="8dp"/>
 
@@ -46,7 +46,7 @@
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/se_d_connecter"
+        android:text="@string/text_se_deconnecter"
         android:onClick="clickLogout"
         android:layout_marginTop="20dp"/>
 </LinearLayout>

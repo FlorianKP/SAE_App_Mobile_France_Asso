@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/logo_de_l_application_france_assos_sant_la_voix_des_usagers"
+        android:contentDescription="@string/descr_logo_application"
         android:src="@drawable/france_asso_sante_logo"
         />
 

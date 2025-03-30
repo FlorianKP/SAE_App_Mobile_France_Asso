@@ -11,7 +11,7 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:src="@drawable/france_asso_sante_logo"
-        android:contentDescription="@string/logo_de_l_application_france_assos_sant_la_voix_des_usagers"
+        android:contentDescription="@string/descr_logo_application"
         android:layout_marginBottom="8dp" />
 
     <TextView

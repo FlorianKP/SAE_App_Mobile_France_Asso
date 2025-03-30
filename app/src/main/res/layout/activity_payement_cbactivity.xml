@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:layout_gravity="center"
-                android:text="@string/r_glement_par_carte_bancaire"
+                android:text="@string/text_reglement_par_carte_bancaire"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
@@ -67,7 +67,7 @@
                     android:layout_height="match_parent"
                     android:layout_toStartOf="@id/optionVISA"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="@string/image_du_logo_mastercard"
+                    android:contentDescription="@string/descr_image_mastercard"
                     android:src="@drawable/mastercard_logo"
                     />
                 <ImageView
@@ -75,7 +75,7 @@
                     android:layout_width="69dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
-                    android:contentDescription="@string/image_du_logo_visa_des_cartes_bancaires"
+                    android:contentDescription="@string/descr_image_visa"
                     android:src="@drawable/visa_logo"
                     />
                 <ImageView
@@ -84,7 +84,7 @@
                     android:layout_height="match_parent"
                     android:layout_toEndOf="@id/optionVISA"
                     android:layout_marginStart="15dp"
-                    android:contentDescription="@string/image_du_logo_cb_de_la_carte_bancaire"
+                    android:contentDescription="@string/descr_image_cb"
                     android:src="@drawable/cb_logo"
 
                     />
@@ -100,7 +100,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/titulaire_de_la_carte"
+                    android:hint="@string/text_titulaire_de_la_carte"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
@@ -118,7 +118,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/num_ro_de_carte"
+                    android:hint="@string/text_numero_de_carte"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
@@ -137,7 +137,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/date_d_expiration_mm_yy"
+                    android:hint="@string/text_date_expiration"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
@@ -155,7 +155,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/cryptogramme_cvv"
+                    android:hint="@string/text_cryptogramme"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
