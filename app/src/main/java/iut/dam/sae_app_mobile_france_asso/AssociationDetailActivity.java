@@ -70,7 +70,7 @@ public class AssociationDetailActivity extends BaseActivity {
                         String description = document.getString("description");
                         String logoUrl = document.getString("logoUrl");
                         String intitule = document.getString("intitule");
-                        Log.d("INFOS ASSO",  category);
+
 
                         nameTextView.setText(intitule);
                         descriptionTextView.setText(description);

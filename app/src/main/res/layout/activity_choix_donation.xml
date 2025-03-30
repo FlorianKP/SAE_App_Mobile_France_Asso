@@ -20,13 +20,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
+            android:contentDescription="@string/bouton_retour_a_la_page_precedente"
             android:src="@drawable/baseline_arrow_back_ios_new_24" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Retour"
+            android:text="@string/retour"
             android:textColor="@color/white" />
     </LinearLayout>
 
@@ -35,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:layout_gravity="center"
-            android:text="Faire un don à"
+            android:text="@string/faire_un_don_a"
             android:textSize="25sp"
             android:textStyle="bold"
             android:layout_marginBottom="15dp"/>
@@ -54,6 +55,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/logo_de_l_association"
             android:src="@drawable/france_asso_sante_logo" />
 
         <TextView
@@ -61,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Quel type de don souhaitez-vous faire? "
+            android:text="@string/quel_type_de_don_souhaitez_vous_faire"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -79,7 +81,7 @@
             android:gravity="center"
             android:paddingHorizontal="50dp"
             android:paddingVertical="20dp"
-            android:text="Don unique"
+            android:text="@string/don_unique"
             android:textColor="@android:color/white"
             android:textSize="20sp"/>
 
@@ -88,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="OU"
+            android:text="@string/ou"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -105,7 +107,7 @@
             android:paddingHorizontal="50dp"
             android:paddingVertical="20dp"
             app:cornerRadius="20dp"
-            android:text="Don récurrent"
+            android:text="@string/don_r_current"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 </LinearLayout>

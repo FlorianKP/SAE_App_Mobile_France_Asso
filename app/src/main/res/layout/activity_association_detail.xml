@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
+            android:contentDescription="@string/bouton_retour_a_la_page_precedente"
             android:onClick="clickBack"
             android:src="@drawable/baseline_arrow_back_ios_new_24"
             android:background="@null" />
@@ -27,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-            android:text="Nom de l'association"
+            android:text="@string/nom_de_l_association"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="17sp" />
@@ -53,7 +54,7 @@
                 android:scaleType="fitCenter"
                 android:background="#E5E5E5"
                 android:layout_marginBottom="8dp"
-                android:contentDescription="Logo de l'association" />
+                android:contentDescription="@string/logo_de_l_association" />
 
 
             <TextView
@@ -61,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="PRÉSENTATION"
+                android:text="@string/pr_sentation"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -71,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="4dp"
-                android:text="Chargement de la description…"
+                android:text="@string/chargement_de_la_description"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:justificationMode="inter_word"/>
@@ -82,7 +83,7 @@
         android:id="@+id/button_donate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Faire un don"
+        android:text="@string/faire_un_don"
         android:textColor="@color/white"
         android:backgroundTint="@color/orange"
         android:layout_marginStart="24dp"

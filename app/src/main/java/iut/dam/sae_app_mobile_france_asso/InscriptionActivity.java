@@ -187,7 +187,7 @@ public class InscriptionActivity extends AppCompatActivity {
     }
 
     private boolean passwordValid(String password) {
-        String passwordPattern = "^(?=.*[0-9])(?=.*[@#$%^&+=!])(?=\\S+$).{8,}$";
+        String passwordPattern = "^(?=.*[0-9])(?=.*[@#$%^&+=!*])(?=\\S+$).{8,}$";
         return password.matches(passwordPattern);
     }
 
