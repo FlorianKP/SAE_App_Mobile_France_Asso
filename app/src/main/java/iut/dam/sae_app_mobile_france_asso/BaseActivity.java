@@ -34,7 +34,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         boolean isLargeText = prefs.getBoolean("large_text", false);
 
         Configuration config = getResources().getConfiguration();
-        config.fontScale = isLargeText ? 1.3f : 1.0f;
+        config.fontScale = isLargeText ? 1.4f : 1.0f;
         getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
 }
