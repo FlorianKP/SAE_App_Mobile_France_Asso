@@ -17,11 +17,10 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class AssociationDetailActivity extends BaseActivity {
+public class AssociationDetailActivity extends AppCompatActivity {
 
     private FirebaseFirestore db;
     private String associationId;
-
     private ImageView logoImageView;
     private TextView nameTextView;
     private TextView descriptionTextView;

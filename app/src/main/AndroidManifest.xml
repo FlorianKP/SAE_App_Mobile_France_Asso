@@ -63,8 +63,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.SAE_App_Mobile_France_Asso">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

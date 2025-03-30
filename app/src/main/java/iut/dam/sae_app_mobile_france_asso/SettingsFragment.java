@@ -21,9 +21,13 @@ public class SettingsFragment extends Fragment {
     private Switch switchAccessibilityText;
     private Spinner spinnerLanguage;
 
-    @Nullable
+    public SettingsFragment() {
+        // Required empty public constructor
+    }
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_settings, container, false);
     }
 
@@ -60,6 +64,13 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {}
         });
+
+        String currentLang = prefs.getString("locale", "fr");
+        if (currentLang.equals("en")) {
+            spinnerLanguage.setSelection(1);
+        } else {
+            spinnerLanguage.setSelection(0);
+        }
     }
 
     private void setLocale(String languageCode) {
