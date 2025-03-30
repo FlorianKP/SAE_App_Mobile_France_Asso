@@ -25,15 +25,15 @@
     <string name="text_nom_association" translatable="false">-nom de l\'association-</string>
     <string name="text_don_mensuel">Don mensuel</string>
     <string name="text_don_annuel">Don annuel</string>
-    <string name="text_1_euro">1 €</string>
-    <string name="text_10_euros">10 €</string>
-    <string name="text_50_euros">50 €</string>
-    <string name="text_100_euros">100 €</string>
+    <string name="text_1_euro" translatable="false">1 €</string>
+    <string name="text_10_euros" translatable="false">10 €</string>
+    <string name="text_50_euros" translatable="false">50 €</string>
+    <string name="text_100_euros" translatable="false">100 €</string>
     <string name="text_montant_libre">Montant libre</string>
     <string name="text_je_donne">Je donne</string>
     <string name="text_connexion">Connexion</string>
     <string name="text_entrez_votre_email_et_votre_mot_de_passe_afin_de_vous_connecter">Entrez votre email et votre mot de passe afin de vous connecter.</string>
-    <string name="text_email">Email</string>
+    <string name="text_email" translatable="false">Email</string>
     <string name="text_mot_de_passe">Mot de passe</string>
     <string name="text_mot_de_passe_oublie">Mot de passe oublié ?</string>
     <string name="text_se_connecter">Se connecter</string>
@@ -43,7 +43,7 @@
     <string name="textQUESTION_vous_n_avez_pas_de_compte">Vous n\'avez pas de compte ?</string>
     <string name="text_inscrivez_vous">Inscrivez-vous</string>
     <string name="text_recapitulatif_annuel">Récapitulatif annuel</string>
-    <string name="text_000_000_euro">000 000€</string>
+    <string name="text_000_000_euro" translatable="false">000 000€</string>
     <string name="text_don_recurrent_pluriel">Dons récurrents</string>
     <string name="text_don_unique_pluriel">Dons uniques</string>
     <string name="text_s_inscrire">S\'inscrire</string>
@@ -55,7 +55,7 @@
     <string name="text_connectez_vous">Connectez-vous</string>
     <string name="descr_inscription_avec_google">Inscription avec Google</string>
     <string name="descr_inscription_avec_facebook">Inscription avec Facebook</string>
-    <string name="descr_menu">Menu</string>
+    <string name="descr_menu" translatable="false">Menu</string>
     <string name="descr_image_bouton_profil">Image bouton de profil cliquable pour se connecter ou se déconnecter</string>
     <string name="text_reglement">Règlement</string>
     <string name="text_choisissez_le_mode_de_paiement">Choisissez le mode de paiement</string>
@@ -63,7 +63,7 @@
     <string name="textUPPER_virement">VIREMENT</string>
     <string name="descr_image_carte_bancaire">Image d\'une carte bancaire correspondant à l\'option de payement : carte bancaire</string>
     <string name="textUPPER_carte_bancaire">CARTE BANCAIRE</string>
-    <string name="textUPPER_paypal">PAYPAL</string>
+    <string name="textUPPER_paypal" translatable="false">PAYPAL</string>
     <string name="text_info_mode_paiement_selec">Information sur le mode de paiement sélectionné</string>
     <string name="descr_image_paypal">Image bouton du logo de PayPal correspondant à l\'option de payement : PayPal</string>
     <string name="text_reglement_par_carte_bancaire">Règlement par carte bancaire</string>
@@ -75,14 +75,14 @@
     <string name="text_date_expiration">Date d\'expiration (MM/YY)</string>
     <string name="text_cryptogramme">Cryptogramme (CVV)</string>
     <string name="textDP_email">Email :</string>
-    <string name="textDP_user_id">User ID:</string>
+    <string name="textDP_user_id">ID Utilisateur:</string>
     <string name="text_se_deconnecter">Se déconnecter</string>
     <string name="descr_logo_application">Logo de l\'application France Assos Santé : La voix des usagers</string>
     <string name="text_accueil">Accueil</string>
     <string name="text_parametres">Paramètres</string>
     <string name="text_a_propos">À propos</string>
     <string name="text_mentions_legales">Mentions légales</string>
-    <string name="text_version_suspension">Version...</string>
+    <string name="text_version_suspension" translatable="false">Version...</string>
     <string name="text_voir_le_code_source">Voir le code source</string>
     <string name="text_parametres_application">Paramètres de l\'application</string>
     <string name="text_texte_agrandi">Texte agrandi</string>
@@ -90,7 +90,7 @@
     <string name="text_donateur">Donateur</string>
     <string name="text_periodicite">Périodicité</string>
     <string name="text_montant">Montant</string>
-    <string name="text_france_assos_sante">France Assos Santé</string>
+    <string name="text_france_assos_sante" translatable="false">France Assos Santé</string>
 
     <string-array name="language_options">
         <item>Français</item>
