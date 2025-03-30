@@ -11,13 +11,13 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:src="@drawable/france_asso_sante_logo"
-        android:contentDescription="Logo de l'application"
+        android:contentDescription="@string/logo_de_l_application_france_assos_sant_la_voix_des_usagers"
         android:layout_marginBottom="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="France Asso Santé"
+        android:text="@string/france_asso_sant"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold" />

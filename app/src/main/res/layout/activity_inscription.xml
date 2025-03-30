@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -17,6 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
+            android:contentDescription="@string/bouton_retour_a_la_page_precedente"
             android:onClick="clickBack"
             android:src="@drawable/baseline_arrow_back_ios_new_24"
             android:background="@null"/>
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Retour"
+            android:text="@string/retour"
             android:onClick="clickBack"
             android:textColor="@color/white"/>
     </LinearLayout>
@@ -42,34 +42,41 @@
             android:layout_gravity="center"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:text="S'inscrire"/>
+            android:text="@string/s_inscrire"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Créez un compte et continuez !"/>
+            android:text="@string/cr_ez_un_compte_et_continuez"/>
         <EditText
             android:id="@+id/etNom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Nom"/>
+            android:autofillHints=""
+            android:hint="@string/nom"
+            android:inputType="textPersonName" />
         <EditText
             android:id="@+id/etPrenom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Prénom"/>
+            android:autofillHints=""
+            android:hint="@string/pr_nom"
+            android:inputType="textPersonName" />
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"/>
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mot de passe"
+            android:autofillHints=""
+            android:hint="@string/mot_de_passe"
             android:inputType="textPassword"
             />
         <Button
@@ -78,13 +85,13 @@
             android:layout_marginTop="10dp"
             android:padding="15dp"
             android:backgroundTint="@color/orange"
-            android:text="S'inscrire"
+            android:text="@string/s_inscrire"
             android:onClick="clickRegister"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Ou inscrivez-vous avec"
+            android:text="@string/ou_inscrivez_vous_avec"
             android:layout_gravity="center"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -100,11 +107,13 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/inscription_avec_google"
                 android:src="@drawable/google_logo"/>
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/inscription_avec_facebook"
                 android:src="@drawable/facebook_logo"/>
 
         </LinearLayout>
@@ -117,14 +126,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vous possédez déjà un compte ?"/>
+                android:text="@string/vous_poss_dez_d_j_un_compte"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/linkBlue"
                 android:textStyle="bold"
-                android:text="Connectez-vous"
+                android:text="@string/connectez_vous"
                 android:onClick="clickLogin"/>
         </LinearLayout>
 

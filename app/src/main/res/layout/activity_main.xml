@@ -8,39 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--
-    <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:orientation="horizontal"
-        android:background="@drawable/blue_gradient"
-        tools:ignore="MissingConstraints">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="1dp"
-            android:background="@null"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-            android:src="@drawable/baseline_arrow_back_ios_new_24" />
-
-        <androidx.appcompat.widget.SearchView
-            android:layout_marginTop="12dp"
-            android:id="@+id/searchView"
-            android:layout_width="0dp"
-            android:layout_height="43dp"
-            android:layout_weight="1"
-            android:background="@drawable/search_background"
-            app:defaultQueryHint="Rechercher une association..."
-            app:iconifiedByDefault="false" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/baseline_account_circle_24" />
-    </LinearLayout>-->
     <LinearLayout
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -61,7 +28,7 @@
             android:layout_marginStart="10dp"
             android:padding="2dp"
             android:src="@drawable/ic_menu"
-            android:contentDescription="Menu"
+            android:contentDescription="@string/menu"
             android:background="@null" />
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
@@ -79,6 +46,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginEnd="5dp"
+            android:contentDescription="@string/ic_ne_de_profil_cliquable_pour_se_connecter_ou_se_d_connecter"
             android:onClick="clickAccount"
             android:src="@drawable/baseline_account_circle_24" />
     </LinearLayout>

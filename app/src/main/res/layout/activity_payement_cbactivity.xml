@@ -17,13 +17,14 @@
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/bouton_retour_a_la_page_precedente"
             android:src="@drawable/baseline_arrow_back_ios_new_24"
             android:background="@null"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Retour"
+            android:text="@string/retour"
             android:textColor="@color/white"/>
     </LinearLayout>
 
@@ -44,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:layout_gravity="center"
-                android:text="Règlement par carte bancaire"
+                android:text="@string/r_glement_par_carte_bancaire"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
@@ -66,6 +67,7 @@
                     android:layout_height="match_parent"
                     android:layout_toStartOf="@id/optionVISA"
                     android:layout_marginEnd="15dp"
+                    android:contentDescription="@string/image_du_logo_mastercard"
                     android:src="@drawable/mastercard_logo"
                     />
                 <ImageView
@@ -73,6 +75,7 @@
                     android:layout_width="69dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/image_du_logo_visa_des_cartes_bancaires"
                     android:src="@drawable/visa_logo"
                     />
                 <ImageView
@@ -81,6 +84,7 @@
                     android:layout_height="match_parent"
                     android:layout_toEndOf="@id/optionVISA"
                     android:layout_marginStart="15dp"
+                    android:contentDescription="@string/image_du_logo_cb_de_la_carte_bancaire"
                     android:src="@drawable/cb_logo"
 
                     />
@@ -96,7 +100,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Titulaire de la carte"
+                    android:hint="@string/titulaire_de_la_carte"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
@@ -114,7 +118,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Numéro de carte"
+                    android:hint="@string/num_ro_de_carte"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
@@ -133,7 +137,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Date d'expiration (MM/YY)"
+                    android:hint="@string/date_d_expiration_mm_yy"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
@@ -151,7 +155,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Cryptogramme (CVV)"
+                    android:hint="@string/cryptogramme_cvv"
                     app:boxStrokeColor="#6200EE"
                     app:boxStrokeWidthFocused="2dp"
                     app:boxBackgroundMode="outline"
@@ -170,17 +174,13 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Je donne"
+                android:text="@string/je_donne"
                 android:textColor="@color/white"
                 android:background="@color/orange"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="60dp"
                 android:onClick="clickGive"
                 />
-
-            <!--
-
-                -->
 
         </LinearLayout>
 
