@@ -44,7 +44,7 @@
     <string name="textQUESTION_vous_n_avez_pas_de_compte">Vous n\'avez pas de compte ?</string>
     <string name="text_inscrivez_vous">Inscrivez-vous</string>
     <string name="text_recapitulatif_annuel">Récapitulatif annuel</string>
-    <string name="text_000_000_euro" translatable="false">000 000€</string>
+    <string name="text_default_euro" translatable="false">0 €</string>
     <string name="text_don_recurrent_pluriel">Dons récurrents</string>
     <string name="text_don_unique_pluriel">Dons uniques</string>
     <string name="text_s_inscrire">S\'inscrire</string>
@@ -75,8 +75,8 @@
     <string name="text_numero_de_carte">Numéro de carte</string>
     <string name="text_date_expiration">Date d\'expiration (MM/YY)</string>
     <string name="text_cryptogramme">Cryptogramme (CVV)</string>
-    <string name="textDP_email">Email :</string>
-    <string name="textDP_user_id">ID Utilisateur:</string>
+    <string name="textDP_email">Email</string>
+    <string name="textDP_user_id">ID Utilisateur</string>
     <string name="text_se_deconnecter">Se déconnecter</string>
     <string name="descr_logo_application">Logo de l\'application France Assos Santé : La voix des usagers</string>
     <string name="text_accueil">Accueil</string>
@@ -94,6 +94,8 @@
     <string name="text_france_assos_sante" translatable="false">France Assos Santé</string>
     <string name="bienvenue" translatable="false">Bienvenue 👋</string>
     <string name="explorez_les_associations_soutenez_leurs_actions" translatable="false"><![CDATA[Explorez les associations & soutenez leurs actions]]></string>
+    <string name="text_voir_historique">Voir l\'historique des dons</string>
+    <string name="textDP_user_asso">Association</string>
 
     <string-array name="language_options">
         <item>Français</item>

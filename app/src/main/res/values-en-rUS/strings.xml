@@ -80,5 +80,7 @@
     <string name="text_donateur">Donor</string>
     <string name="text_periodicite">Frequency</string>
     <string name="text_montant">Amount</string>
+    <string name="text_voir_historique">View donation history</string>
+    <string name="textDP_user_asso">Association</string>
 
 </resources>

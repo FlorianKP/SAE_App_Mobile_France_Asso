@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
+    android:layout_height="wrap_content"
     android:layout_weight="100"
     android:baselineAligned="false"
     android:orientation="horizontal">
@@ -18,9 +18,9 @@
         tools:ignore="NestedWeights">
 
         <TextView
+            android:id="@+id/donateur_name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_donateur" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -33,9 +33,9 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/periodicite"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_periodicite" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -48,8 +48,8 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/montant"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_montant" />
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </LinearLayout>
