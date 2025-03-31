@@ -30,7 +30,7 @@ public class AboutFragment extends Fragment {
         txtVersion.setText("Version 1.0.0");
 
         txtSource.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tonrepo"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/FlorianKP/SAE_App_Mobile_France_Asso.git"));
             startActivity(browserIntent);
         });
     }
