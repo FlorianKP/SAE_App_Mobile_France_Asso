@@ -162,7 +162,7 @@ public class InscriptionActivity extends AppCompatActivity {
                         createAccount(email,password, name, firstname);
                     }
                     else{
-                        Toast t = Toast.makeText(this, "Mot de passe invalide", Toast.LENGTH_SHORT);
+                        Toast t = Toast.makeText(this, "mot de passe : minimum 8 caractères, un chiffre et un caractère spécial", Toast.LENGTH_LONG);
                         t.show();
                     }
                 }
