@@ -2,6 +2,7 @@ package iut.dam.sae_app_mobile_france_asso;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.service.controls.templates.TemperatureControlTemplate;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -26,6 +27,8 @@ public class ProfileActivity extends AppCompatActivity {
     private Button buttonHist;
     private TextView associationName;
     private TextView associationText;
+    private TextView userName;
+    private TextView userFirstname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,8 @@ public class ProfileActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         tvEmail = findViewById(R.id.profile_mail);
         tvUserId = findViewById(R.id.profile_id);
+        userName = findViewById(R.id.profile_name);
+        userFirstname = findViewById(R.id.profile_firstname);
 
         associationText = findViewById(R.id.profile_asso_text);
         associationName = findViewById(R.id.profile_asso);
@@ -51,6 +56,8 @@ public class ProfileActivity extends AppCompatActivity {
             DocumentReference userRef = db.collection("users").document(user.getUid());
             userRef.get().addOnSuccessListener(documentSnapshot -> {
                 if (documentSnapshot.exists()) {
+                    userName.setText(documentSnapshot.getString("name"));
+                    userFirstname.setText(documentSnapshot.getString("firstname"));
                     isAdmin = Boolean.TRUE.equals(documentSnapshot.getBoolean("isAdmin"));
                     if (isAdmin) {
                         String idAsso = documentSnapshot.getString("idAsso");

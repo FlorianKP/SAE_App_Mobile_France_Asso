@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="90dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:textStyle="bold"
             android:text="@string/textDP_email"
             android:textSize="20dp" />
@@ -47,14 +47,14 @@
             android:id="@+id/profile_mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12dp"
+            android:textSize="16dp"
             android:layout_toRightOf="@id/profile_mail_text"/>
 
         <TextView
             android:id="@+id/profile_id_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:text="@string/textDP_user_id"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -69,13 +69,49 @@
             android:layout_toRightOf="@id/profile_mail_text"/>
 
         <TextView
+            android:id="@+id/profile_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/textDP_user_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/profile_id_text"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/profile_id_text"
+            android:layout_toRightOf="@id/profile_mail_text"/>
+
+        <TextView
+            android:id="@+id/profile_firstname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/textDP_user_firstname"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/profile_name_text"/>
+
+        <TextView
+            android:id="@+id/profile_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/profile_name_text"
+            android:layout_toRightOf="@id/profile_mail_text"/>
+
+        <TextView
             android:id="@+id/profile_asso_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/textDP_user_asso"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_below="@id/profile_id_text"
+            android:layout_below="@id/profile_firstname_text"
             android:visibility="gone"/>
 
         <TextView
@@ -83,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18dp"
-            android:layout_below="@id/profile_id_text"
+            android:layout_below="@id/profile_firstname_text"
             android:layout_toRightOf="@id/profile_mail_text"
             android:visibility="gone"/>
     </RelativeLayout>

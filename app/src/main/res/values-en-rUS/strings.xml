@@ -82,5 +82,7 @@
     <string name="text_montant">Amount</string>
     <string name="text_voir_historique">View donation history</string>
     <string name="textDP_user_asso">Association</string>
+    <string name="textDP_user_name">Lastname</string>
+    <string name="textDP_user_firstname">Firstname</string>
 
 </resources>

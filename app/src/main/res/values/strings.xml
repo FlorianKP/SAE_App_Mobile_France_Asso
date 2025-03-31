@@ -96,6 +96,8 @@
     <string name="explorez_les_associations_soutenez_leurs_actions" translatable="false"><![CDATA[Explorez les associations & soutenez leurs actions]]></string>
     <string name="text_voir_historique">Voir l\'historique des dons</string>
     <string name="textDP_user_asso">Association</string>
+    <string name="textDP_user_name">Nom</string>
+    <string name="textDP_user_firstname">Prénom</string>
 
     <string-array name="language_options">
         <item>Français</item>
