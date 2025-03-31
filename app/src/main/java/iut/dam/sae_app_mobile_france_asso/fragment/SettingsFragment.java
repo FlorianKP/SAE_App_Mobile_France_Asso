@@ -1,4 +1,4 @@
-package iut.dam.sae_app_mobile_france_asso;
+package iut.dam.sae_app_mobile_france_asso.fragment;
 
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -15,6 +15,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.Locale;
+
+import iut.dam.sae_app_mobile_france_asso.R;
 
 public class SettingsFragment extends Fragment {
 

@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import iut.dam.sae_app_mobile_france_asso.adapter.IntroAdapter;
+
 public class IntroductionActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager;

@@ -23,13 +23,13 @@
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".LegalFragment"
+            android:name=".fragment.LegalFragment"
             android:exported="false" />
         <activity
-            android:name=".AboutFragment"
+            android:name=".fragment.AboutFragment"
             android:exported="false" />
         <activity
-            android:name=".SettingsFragment"
+            android:name=".fragment.SettingsFragment"
             android:exported="false" />
         <activity
             android:name=".PayementCBActivity"

@@ -1,4 +1,4 @@
-package iut.dam.sae_app_mobile_france_asso;
+package iut.dam.sae_app_mobile_france_asso.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import java.util.List;
+
+import iut.dam.sae_app_mobile_france_asso.DonRecurrent;
+import iut.dam.sae_app_mobile_france_asso.R;
 
 public class HistDonRecurrentAdapter extends ArrayAdapter<DonRecurrent> {
     public HistDonRecurrentAdapter(@NonNull Context context, int activity_historique, @NonNull List<DonRecurrent> items) {

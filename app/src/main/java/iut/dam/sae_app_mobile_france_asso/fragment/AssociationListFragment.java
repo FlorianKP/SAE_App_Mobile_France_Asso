@@ -1,4 +1,4 @@
-package iut.dam.sae_app_mobile_france_asso;
+package iut.dam.sae_app_mobile_france_asso.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -21,6 +21,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import iut.dam.sae_app_mobile_france_asso.Association;
+import iut.dam.sae_app_mobile_france_asso.R;
+import iut.dam.sae_app_mobile_france_asso.adapter.AssociationAdapter;
 
 public class AssociationListFragment extends Fragment {
 

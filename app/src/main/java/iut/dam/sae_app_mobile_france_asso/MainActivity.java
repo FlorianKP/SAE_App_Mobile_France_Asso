@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -15,6 +14,12 @@ import androidx.fragment.app.FragmentManager;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import iut.dam.sae_app_mobile_france_asso.fragment.AboutFragment;
+import iut.dam.sae_app_mobile_france_asso.fragment.AssociationListFragment;
+import iut.dam.sae_app_mobile_france_asso.fragment.CategoryFragment;
+import iut.dam.sae_app_mobile_france_asso.fragment.LegalFragment;
+import iut.dam.sae_app_mobile_france_asso.fragment.SettingsFragment;
 
 public class MainActivity extends BaseActivity implements CategoryFragment.CategoryListener {
 

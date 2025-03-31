@@ -1,4 +1,4 @@
-package iut.dam.sae_app_mobile_france_asso;
+package iut.dam.sae_app_mobile_france_asso.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import iut.dam.sae_app_mobile_france_asso.R;
 
 public class IntroAdapter extends RecyclerView.Adapter<IntroAdapter.IntroViewHolder> {
 
