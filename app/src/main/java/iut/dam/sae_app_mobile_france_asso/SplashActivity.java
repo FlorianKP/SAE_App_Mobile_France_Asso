@@ -14,9 +14,12 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-            startActivity(intent);
+            if (!SharedPrefManager.isIntroSeen(SplashActivity.this)) {
+                startActivity(new Intent(SplashActivity.this, WelcomeActivity.class));
+            } else {
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            }
             finish();
-        }, 2000); // Durée du splash en ms
+        }, 1500);
     }
 }

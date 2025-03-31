@@ -92,6 +92,8 @@
     <string name="text_periodicite">Périodicité</string>
     <string name="text_montant">Montant</string>
     <string name="text_france_assos_sante" translatable="false">France Assos Santé</string>
+    <string name="bienvenue" translatable="false">Bienvenue 👋</string>
+    <string name="explorez_les_associations_soutenez_leurs_actions" translatable="false"><![CDATA[Explorez les associations & soutenez leurs actions]]></string>
 
     <string-array name="language_options">
         <item>Français</item>
