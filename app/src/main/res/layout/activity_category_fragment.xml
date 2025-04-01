@@ -2,8 +2,8 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:padding="5dp">
 
     <LinearLayout
         android:id="@+id/categoryContainer"
@@ -16,64 +16,72 @@
             android:id="@+id/category_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_toutes"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_toutes" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/category_maladies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_maladies_chroniques"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_maladies_chroniques" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/category_accidents"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_accidents_et_effets_secondaires"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_accidents_et_effets_secondaires" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/category_handicap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_handicap_et_dependance"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_handicap_et_dependance" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/category_sante_mentale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_sante_mentale_et_bien_etre"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_sante_mentale_et_bien_etre" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/category_droits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_droits_des_patients"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_droits_des_patients" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/category_aidants"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_soutien_aux_aidants"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_soutien_aux_aidants" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/category_prevention"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_prevention_et_sante_publique"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/category_button_selector"
-            android:layout_marginEnd="10dp"/>
+            android:focusable="true"
+            android:text="@string/text_prevention_et_sante_publique" />
     </LinearLayout>
 </HorizontalScrollView>

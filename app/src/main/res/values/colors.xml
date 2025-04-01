@@ -10,4 +10,5 @@
     <color name="grey">#E0E0E0</color>
     <color name="lightBlue2">#C0EAED</color>
     <color name="red">#FF0000</color>
+    <color name="grey_WCAG_RGAA">#595959</color>
 </resources>
