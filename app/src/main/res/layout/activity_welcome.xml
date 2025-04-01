@@ -1,6 +1,5 @@
 <!-- res/layout/activity_welcome.xml -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,47 +10,47 @@
         android:id="@+id/logoImageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/france_asso_sante_logo"
-        android:contentDescription="@string/descr_logo_association"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="64dp"
+        android:contentDescription="@string/descr_logo_association"
+        android:src="@drawable/france_asso_sante_logo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/bienvenue"
+        android:textColor="#222222"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:textColor="#222222"
-        app:layout_constraintTop_toBottomOf="@id/logoImageView"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView" />
 
     <TextView
         android:id="@+id/tvSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/explorez_les_associations_soutenez_leurs_actions"
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/explorez_les_associations_soutenez_leurs_actions"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
 
     <TextView
         android:id="@+id/tvAlreadyUsed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
-        android:text="Avez-vous déjà utilisé cette application ?"
-        android:textColor="#444444"
+        android:text="@string/text_avez_vous_deja_utilise_cette_application"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@id/btnSeConnecter"
@@ -63,23 +62,27 @@
         android:id="@+id/btnSeConnecter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Se connecter"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/linkBlue"
+        android:focusable="true"
+        android:text="@string/text_se_connecter"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/btnContinuer"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="16dp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnContinuer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Continuer sans se connecter"
-        android:backgroundTint="#E0E0E0"
-        android:textColor="#000000"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/grey"
+        android:focusable="true"
+        android:text="@string/text_continuer_sans_se_connecter"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

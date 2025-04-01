@@ -80,9 +80,11 @@
     <string name="text_donateur">Donor</string>
     <string name="text_periodicite">Frequency</string>
     <string name="text_montant">Amount</string>
+    <string name="explorez_les_associations_soutenez_leurs_actions"><![CDATA[Discover associations & support their initiatives]]></string>
     <string name="text_voir_historique">View donation history</string>
     <string name="textDP_user_asso">Association</string>
     <string name="textDP_user_name">Lastname</string>
     <string name="textDP_user_firstname">Firstname</string>
-
+    <string name="text_continuer_sans_se_connecter">Continue without logging in</string>
+    <string name="bienvenue">Welcome 👋</string>
 </resources>

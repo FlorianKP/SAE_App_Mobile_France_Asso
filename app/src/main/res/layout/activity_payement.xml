@@ -4,68 +4,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".PayementActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
+        android:background="@drawable/blue_gradient"
         android:orientation="horizontal"
-        android:background="@drawable/blue_gradient">
+        android:padding="15dp">
+
         <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@null"
             android:contentDescription="@string/descr_btn_retour"
-            android:src="@drawable/baseline_arrow_back_ios_new_24"
-            android:background="@null"/>
+            android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/text_retour"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/Règlement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="50dp"
                 android:text="@string/text_reglement"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_choisissez_le_mode_de_paiement"
                 android:layout_gravity="center"
-                android:textSize="25sp"
-                />
+                android:text="@string/text_choisissez_le_mode_de_paiement"
+                android:textSize="25sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.85"
             android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            >
+            android:layout_weight="0.85"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/optionsDePayement"
@@ -73,13 +73,16 @@
                 android:layout_height="wrap_content"
 
                 >
+
                 <ImageView
                     android:id="@+id/virement_logo"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginEnd="25dp"
                     android:layout_toStartOf="@id/carte_bancaire_logo"
+                    android:clickable="true"
                     android:contentDescription="@string/descr_image_virement"
+                    android:focusable="true"
                     android:src="@drawable/virement_logo" />
 
                 <TextView
@@ -90,6 +93,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="45dp"
                     android:layout_toStartOf="@id/carte_bancaire_TextView"
+                    android:labelFor="@id/virement_logo"
                     android:text="@string/textUPPER_virement"
                     android:textSize="12sp" />
 
@@ -98,7 +102,9 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
+                    android:clickable="true"
                     android:contentDescription="@string/descr_image_carte_bancaire"
+                    android:focusable="true"
                     android:src="@drawable/carte_bancaire_image" />
 
                 <TextView
@@ -108,6 +114,7 @@
                     android:layout_below="@id/carte_bancaire_logo"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
+                    android:labelFor="@id/carte_bancaire_logo"
                     android:text="@string/textUPPER_carte_bancaire"
                     android:textSize="12sp" />
 
@@ -117,7 +124,9 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="25dp"
                     android:layout_toEndOf="@id/carte_bancaire_logo"
+                    android:clickable="true"
                     android:contentDescription="@string/descr_image_paypal"
+                    android:focusable="true"
                     android:src="@drawable/paypal_logo" />
 
                 <TextView
@@ -128,6 +137,7 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="10dp"
                     android:layout_toEndOf="@id/carte_bancaire_TextView"
+                    android:labelFor="@id/paypal_logo"
                     android:text="@string/textUPPER_paypal"
                     android:textSize="12sp" />
 
@@ -139,28 +149,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
-                android:padding="16dp">
+                android:padding="16dp"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/texte_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
                     android:text="@string/text_info_mode_paiement_selec"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="12dp" />
+                    android:textSize="16sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_je_donne"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/text_je_donne"
                     android:background="@color/orange"
+                    android:text="@string/text_je_donne"
                     android:textColor="@android:color/white"
                     android:visibility="gone" />
             </LinearLayout>
-
-
 
 
         </LinearLayout>

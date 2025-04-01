@@ -92,12 +92,14 @@
     <string name="text_periodicite">Périodicité</string>
     <string name="text_montant">Montant</string>
     <string name="text_france_assos_sante" translatable="false">France Assos Santé</string>
-    <string name="bienvenue" translatable="false">Bienvenue 👋</string>
-    <string name="explorez_les_associations_soutenez_leurs_actions" translatable="false"><![CDATA[Explorez les associations & soutenez leurs actions]]></string>
+    <string name="bienvenue">Bienvenue 👋</string>
+    <string name="explorez_les_associations_soutenez_leurs_actions"><![CDATA[Explorez les associations & soutenez leurs actions]]></string>
     <string name="text_voir_historique">Voir l\'historique des dons</string>
     <string name="textDP_user_asso">Association</string>
     <string name="textDP_user_name">Nom</string>
     <string name="textDP_user_firstname">Prénom</string>
+    <string name="text_continuer_sans_se_connecter">Continuer sans se connecter</string>
+    <string name="text_avez_vous_deja_utilise_cette_application">Avez-vous déjà utilisé cette application ?</string>
 
     <string-array name="language_options">
         <item>Français</item>
