@@ -24,7 +24,7 @@
     <string name="text_faire_un_don_unique_a">Make a one-time donation to</string>
     <string name="text_don_mensuel">Monthly donation</string>
     <string name="text_don_annuel">Annual donation</string>
-    <string name="text_montant_libre">Custom amount</string>
+    <string name="text_montant_libre">Custom amount (€)</string>
     <string name="text_je_donne">I donate</string>
     <string name="text_connexion">Login</string>
     <string name="text_entrez_votre_email_et_votre_mot_de_passe_afin_de_vous_connecter">Enter your email and password to log in.</string>

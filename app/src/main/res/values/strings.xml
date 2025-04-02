@@ -30,7 +30,7 @@
     <string name="text_10_euros" translatable="false">10 €</string>
     <string name="text_50_euros" translatable="false">50 €</string>
     <string name="text_100_euros" translatable="false">100 €</string>
-    <string name="text_montant_libre">Montant libre</string>
+    <string name="text_montant_libre">Montant libre (€)</string>
     <string name="text_je_donne">Je donne</string>
     <string name="text_connexion">Connexion</string>
     <string name="text_entrez_votre_email_et_votre_mot_de_passe_afin_de_vous_connecter">Entrez votre email et votre mot de passe afin de vous connecter.</string>
