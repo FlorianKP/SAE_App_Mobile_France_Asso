@@ -72,9 +72,11 @@ public class InscriptionActivity extends AppCompatActivity {
                         } else {
                             // Échec de l'inscription
                             if (task.getException() instanceof FirebaseAuthUserCollisionException) {
-                                Toast.makeText(InscriptionActivity.this, "Cet email est déjà enregistré !", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(InscriptionActivity.this,
+                                        "Cet email est déjà enregistré !", Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(InscriptionActivity.this, "Échec de l'inscription.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(InscriptionActivity.this,
+                                        "Échec de l'inscription.", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
@@ -143,7 +145,8 @@ public class InscriptionActivity extends AppCompatActivity {
     private void updateUI(FirebaseUser user) {
         Intent intent = new Intent(this, ConnexionActivity.class);
         startActivity(intent);
-        Toast.makeText(this, "Inscription réussie", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,
+                "Inscription réussie", Toast.LENGTH_SHORT).show();
     }
 
     public void clickRegister(View view) {

@@ -40,7 +40,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:background="@drawable/search_background"
-            app:defaultQueryHint="Rechercher une association..."
+            app:defaultQueryHint="@string/text_rechercher_une_association"
             app:iconifiedByDefault="false" />
         <ImageView
             android:layout_width="50dp"

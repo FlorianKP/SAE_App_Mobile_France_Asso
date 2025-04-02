@@ -87,4 +87,6 @@
     <string name="textDP_user_firstname">Firstname</string>
     <string name="text_continuer_sans_se_connecter">Continue without logging in</string>
     <string name="bienvenue">Welcome 👋</string>
+    <string name="text_avez_vous_deja_utilise_cette_application">"Have you ever used this app?"</string>
+    <string name="text_rechercher_une_association">Search an association...</string>
 </resources>

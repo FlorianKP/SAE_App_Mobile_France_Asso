@@ -100,7 +100,7 @@
     <string name="textDP_user_firstname">Prénom</string>
     <string name="text_continuer_sans_se_connecter">Continuer sans se connecter</string>
     <string name="text_avez_vous_deja_utilise_cette_application">Avez-vous déjà utilisé cette application ?</string>
-
+    <string name="text_rechercher_une_association">Rechercher une association...</string>
     <string-array name="language_options">
         <item>Français</item>
         <item>English</item>

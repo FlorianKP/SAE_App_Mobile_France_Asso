@@ -76,7 +76,9 @@ public class SettingsFragment extends Fragment {
     }
 
     private void setLocale(String languageCode) {
-        SharedPreferences prefs = requireContext().getSharedPreferences("app_settings", getContext().MODE_PRIVATE);
+        SharedPreferences prefs = requireContext()
+                .getSharedPreferences("app_settings",
+                        getContext().MODE_PRIVATE);
         String currentLang = prefs.getString("locale", "");
         if (!languageCode.equals(currentLang)) {
             prefs.edit().putString("locale", languageCode).apply();
@@ -86,7 +88,8 @@ public class SettingsFragment extends Fragment {
 
             Configuration config = getResources().getConfiguration();
             config.setLocale(locale);
-            getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+            getResources().updateConfiguration(config,
+                    getResources().getDisplayMetrics());
 
             requireActivity().recreate();
         }
