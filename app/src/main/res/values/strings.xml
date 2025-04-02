@@ -101,6 +101,12 @@
     <string name="text_continuer_sans_se_connecter">Continuer sans se connecter</string>
     <string name="text_avez_vous_deja_utilise_cette_application">Avez-vous déjà utilisé cette application ?</string>
     <string name="rechercher_une_association">Rechercher une association...</string>
+    <string name="legal_text">Cette application est un projet pédagogique.
+
+    Toutes les données affichées sont fictives.
+    Aucune transaction réelle n'est effectuée.
+
+    Droits d'auteur : © 2025 France Asso Santé (simulation)</string>
 
     <string-array name="language_options">
         <item>Français</item>
