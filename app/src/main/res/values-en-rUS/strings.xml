@@ -88,6 +88,6 @@
     <string name="text_continuer_sans_se_connecter">Continue without logging in</string>
     <string name="bienvenue">Welcome 👋</string>
     <string name="text_avez_vous_deja_utilise_cette_application">Have you used this application before?</string>
-    <string name="rechercher_une_association">Search for an association...</string>
+    <string name="text_rechercher_une_association">Search for an association...</string>
     <string name="legal_text">This application is an educational project.\n\nAll displayed data is fictitious.\nNo real transactions are carried out.\n\nCopyright: © 2025 France Asso Santé (simulation)</string>
 </resources>
