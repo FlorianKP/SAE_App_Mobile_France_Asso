@@ -128,7 +128,7 @@
         android:textColorHint="@color/grey_WCAG_RGAA"
         android:inputType="number"
         android:textSize="20sp"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:background="@drawable/bordure_choix_montant"
