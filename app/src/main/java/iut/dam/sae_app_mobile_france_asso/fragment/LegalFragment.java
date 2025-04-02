@@ -25,6 +25,6 @@ public class LegalFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         TextView txtLegal = view.findViewById(R.id.txt_legal);
-        txtLegal.setText("Cette application est un projet pédagogique.\n\nToutes les données affichées sont fictives.\nAucune transaction réelle n'est effectuée.\n\nDroits d'auteur : © 2025 France Asso Santé (simulation)");
+        txtLegal.setText(getString(R.string.legal_text));
     }
 }
